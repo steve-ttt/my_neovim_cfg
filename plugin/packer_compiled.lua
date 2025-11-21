@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/stephen/.cache/nvim/packer_hererocks/2.1.1761727121/share/lua/5.1/?.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1761727121/share/lua/5.1/?/init.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1761727121/lib/luarocks/rocks-5.1/?.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1761727121/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/stephen/.cache/nvim/packer_hererocks/2.1.1761727121/lib/lua/5.1/?.so"
+local package_path_str = "/home/stephen/.cache/nvim/packer_hererocks/2.1.1737090214/share/lua/5.1/?.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1737090214/share/lua/5.1/?/init.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1737090214/lib/luarocks/rocks-5.1/?.lua;/home/stephen/.cache/nvim/packer_hererocks/2.1.1737090214/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/stephen/.cache/nvim/packer_hererocks/2.1.1737090214/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -78,6 +78,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stephen/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["mason-lspconfig"] = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/mason-lspconfig",
+    url = "https://github.com/williamboman/mason-lspconfig"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mini.nvim"] = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -109,6 +129,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stephen/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  undotree = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/stephen/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 

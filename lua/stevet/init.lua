@@ -1,3 +1,5 @@
 require("stevet.remap")
 require("stevet.packer")
+require("stevet.set")
+require("stevet.lsp")
 print("hello steve!")
